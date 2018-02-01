@@ -27,6 +27,21 @@ const contenu_objet_json = (o) => {
    return trace;
    }
 
+let oTerritoires = {  
+                    "QC" : "Territoires du Nord-Ouest",
+                   "ON" : "Nunavut",
+                   "MA" : "Yukon"
+                }
+/* 
+permet d'extraire l'ensemble des propriétés valeurs de l'objet litéral */
+
+const contenu_objet_json = (o) => {
+   let trace = '';
+   for (let p in o) { 
+     trace += p + ': ' + o[p] + '\n' + '<br></br>'; 
+   } 
+   return trace;
+   }
 response.writeHead(200, {"Content-Type": "text/html; charset=UTF-8"});
 response.write('<style>h1 {font-family:arial; font-size: 3em;}</style>')
  response.write('<!DOCTYPE "html">');
@@ -38,8 +53,8 @@ response.write('<style>h1 {font-family:arial; font-size: 3em;}</style>')
  response.write('Bonjour tout le monde');
  response.write('<h1>Provinces</h1>');
  response.write('<p>'+(contenu_objet_json(oProvince))+'</p>');
-  response.write('<h1>Provinces</h1>');
- response.write('<p>'+(contenu_objet_json(oProvince))+'</p>');
+  response.write('<h1>Territoires</h1>');
+ response.write('<p>'+(contenu_objet_json(oTerritoires))+'</p>');
  response.write('</body>');
  response.write('</html>');
 
