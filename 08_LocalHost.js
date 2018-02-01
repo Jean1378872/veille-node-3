@@ -9,12 +9,12 @@ let oProvince = {  "QC" : "Québec",
                    "ON" : "Ontario",
                    "MA" : "Manitoba",
                    "SK" : "Saskashewan",
-                   "SK" : "Colombie-Britannique",
-                   "SK" : "Île-du-Prince-Édouard",
-                   "SK" : "Nouvelle-Écosse",
-                   "SK" : "Terre-Neuve et Labrador",
-                   "SK" : "Alberta",
-                   "SK" : "Nouveau-Brunswick"
+                   "CB" : "Colombie-Britannique",
+                   "IPE" : "Île-du-Prince-Édouard",
+                   "NE" : "Nouvelle-Écosse",
+                   "TN" : "Terre-Neuve et Labrador",
+                   "AL" : "Alberta",
+                   "NB" : "Nouveau-Brunswick"
                 }
 /* 
 permet d'extraire l'ensemble des propriétés valeurs de l'objet litéral */
